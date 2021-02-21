@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="notice"><%= $message %></p>
+    <p><strong>Title:</strong> <%= @book.title %></p>
+    <p><strong>Body:</strong> <%= @book.body %></p>
+    <a href="/books/<%= @book.id %>/edit">Edit</a> | <a href="/books">Back</a>
+  </body>
+</html>
