@@ -4,6 +4,6 @@
     <p id="notice"><%= $message %></p>
     <p><strong>Title:</strong> <%= @book.title %></p>
     <p><strong>Body:</strong> <%= @book.body %></p>
-    <a href="/books/<%= @book.id %>/edit">Edit</a> | <a href="/books">Back</a>
+    <%= link_to "Edit", "/books/#{@book.id}/edit" %> | <%= link_to "Back", "/books" %>
   </body>
 </html>

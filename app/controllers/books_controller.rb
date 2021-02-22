@@ -55,7 +55,7 @@ class BooksController < ApplicationController
     end
   end
 
-  def destory
+  def destroy
     book = Book.find(params[:id])
     book.destroy
     $delete_judge = "true"
